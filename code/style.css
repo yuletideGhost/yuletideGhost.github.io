@@ -1,0 +1,489 @@
+  /* universal selector */
+  body {
+    background-color: azure;
+  }
+
+  /* Flexbox */
+  /* header space */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 25px;
+    gap: 10px;
+  }
+
+  /* footer space */
+  footer {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+    right: 25px;
+  }
+
+  /* footer image */
+  .footerimg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } 
+
+
+  /* header styles */
+  .nav-h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    color:rgb(123, 123, 123);
+  }
+
+  .nav-section {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+    right: 25px;
+  }
+
+  .nav-h2 {
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    color:rgb(123, 123, 123);
+  }
+
+  /* background images */
+  .parallax {
+    /* The image used */
+    background-image: url("images2/Bioluminescent waves.jpg");
+  
+    /* Set a specific height */
+    min-height: 550px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url("images2/Ocean sunrise in Navarre.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax3 {
+    /* The image used */
+    background-image: url("images2/Devil's eye, Ginnie Springs - Imgur.jpg");
+  
+    /* Set a specific height */
+    min-height: 600px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax4 {
+    /* The image used */
+    background-image: url("images2/Stargazing over a secluded beach.jpg");
+  
+    /* Set a specific height */
+    min-height: 200px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax5 {
+    /* The image used */
+    background-image: url("assets/Underwater World HD.gif");
+  
+    /* Set a specific height */
+    min-height: 450px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px 10px;
+    display: grid;
+    grid-template-areas: 
+    "article nav"
+    "header nav"
+    "footer sidebar";
+  }
+
+  /* header */
+  .grid-item-header {
+    /* background: rgb(255, 217, 0); */
+    padding-left: 20px;
+    border-radius: 10px;
+    grid-area: header;
+    position:relative;
+    top: -50px;
+  }
+  
+  /* sidebar */
+  .grid-item-nav {
+    /* background: rgb(200, 0, 255); */
+    border-radius: 10px;
+    grid-area: nav;
+  }
+
+  /* article */
+  .grid-item-article {
+    /* background: rgb(255, 0, 132); */
+    padding-left: 20px;
+    padding-top: 35px;
+    border-radius: 10px;
+    grid-area: article;
+  }
+
+  /* nav */
+  .grid-item-sidebar {
+    /* background: rgb(111, 255, 0); */
+    border-radius: 10px;
+    grid-area: sidebar;
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  
+  /* footer */
+  .grid-item-footer {
+    /* background: rgb(0, 255, 247); */
+    padding-left: 20px;
+    border-radius: 10px;
+    grid-area: footer;
+    position: relative;
+    top: -90px;
+  }
+
+  /* surveys */
+  .grid-item-aside {
+    /* background: rgb(255, 0, 81); */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* audio */
+  .grid-item-aside2 {
+    /* background: coral; */
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  /* making the iPhone audio player */
+  audio {
+    position: absolute;
+    z-index: 3; 
+    left: 40px;
+    top: 210px;
+  }
+  .iphone {
+    position: relative;
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+  }
+  .waterGif {  
+    position: relative;   
+    z-index: 1;
+    left: -345px; 
+    top: -13px;
+    border-radius: 15px;
+  }
+
+  /* an empty space */
+  .empty{
+    padding: 20px 30px; 
+    position: relative;
+    top: 0px; 
+    left: 0px;
+  }
+
+  /* index.html three equal columns */
+  *{
+    box-sizing: border-box;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* URL/ Link styling */
+  /* unvisited link */
+  a:link {
+    color: steelblue;
+  }
+  /* visited link */
+  a:visited {
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+  }
+  /* mouse over link */
+  a:hover {
+    color: teal;
+    text-decoration: none;
+  }
+  /* selected link */
+  a:active {
+    color: rgb(0, 255, 247);
+  }
+
+  /* Table styling; multiple selectors */
+  table, th, td {
+    border: 1px solid #3b5a7c;
+  }
+  table {
+    width: 50%;
+  }
+
+  /* List styling */
+  ol {
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    width: 80%;
+    list-style-position: outside;
+  }
+
+  /* Adjacent sibling selectors */
+  li:hover + li {
+    font-weight: bold;
+  }
+
+  /* Sibling selectors */
+  li:hover ~ li {
+    color: steelblue;
+  }
+
+  /* Child selectors */
+  div > p {
+    /* font-family:'Times New Roman', Times, serif; */
+    font-family:cursive;
+  }
+
+  /* attribute and pseudo-element selectors */
+  #title:hover { 
+    width: 40%;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+  }
+
+  /* This is for form on aboutme.html; multiple selectors */
+  input[type=text], input[type=email], textarea {
+    box-sizing: border-box;
+    border: 1px solid steelblue;
+    border-radius: 10px;
+  }
+
+  /* This is for our nav bar opacity */
+  .cont1{
+    position: relative;
+  }
+  .belImage{
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: (translate(-50%, -50%));
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .cont1:hover .belImage{
+    opacity: .75;
+  }
+  .cont1:hover .middle{
+    opacity: 1;
+  }
+  .textImg{
+    font: Times New Roman;
+    color: steelblue;
+    font-size: 20px;
+    padding: 16px 32px;
+  }
+    /*if we turn on forms in aboutocean page will break*/
+  /* label{
+    display:flex;
+    text-align: right;
+    flex-direction:column;
+    padding: 5px;
+  } */
+
+  /*Assignment 3 addditions*/
+  .grid-button {
+    margin: 20px;
+    align-items: center;
+  }
+  /*button styling CSS*/
+  .btn {
+    background-color: lightblue;
+    border: none;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    font-family:'Times New Roman', Times, serif;
+    /* display: inline-block; */
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: darkslateblue;
+    color: white;
+  }
+  /*Assignment 3 addditions and media breaks*/
+
+  /*tablet_view; 1200px*/
+  @media screen and (max-width: 1200px){
+  /* background changes color in tablet view */
+  body {
+    background-color: rgb(225, 214, 255);
+  }
+  /* index.html three equal columns */
+  *{
+    box-sizing: border-box;
+  }
+  .row {
+    display: grid;
+    place-items: center;
+    grid-template-areas: "inner-div";
+  }
+  .column {
+    height: auto;
+    width: auto;
+    grid-area: row-div;
+    text-align: center;
+  }
+  /*Nav Description moves with page*/
+  #desc {
+    margin: auto auto;
+    padding: 15px;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: -30px;
+  }
+  /* aboutme.html series of circles that are part of the header*/
+  #headerimgs {
+    display: none;
+  }
+}
+  
+  /*mobile_view; 840px*/
+  @media screen and (max-width: 840px) {
+  /* background changes color in mobile view */ 
+  body {
+    background-color: azure;
+  }
+  /* index.html three equal columns */
+  *{
+    box-sizing: border-box;
+  }
+  .row {
+    display: grid;
+    place-items: center;
+    grid-template-areas: "inner-div";
+  }
+  .column {
+    height: auto;
+    width: auto;
+    grid-area: row-div;
+    text-align: center;
+  }
+  /* Nav Description moves with page*/
+  #desc {
+    margin: auto auto;
+    padding: 15px;
+    width: 80%;
+    height: 80%;
+  }
+  /* series of circles that are part of the header*/
+  #headerimgs {
+    display: none;
+  }
+
+  /* Grid */
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 50px;
+  }
+
+  .grid-container {
+    flex-direction: column;
+    justify-content: flext-start;
+    align-items: stretch;
+  }
+
+  /* aboutocean.html making the iPhone audio player */
+  audio {
+    position: absolute;
+    z-index: 3; 
+    left: 40px;
+    top: 200px;
+  }
+  .iphone {
+    position: relative;
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+  }
+  .waterGif {  
+    position: relative;   
+    z-index: 1;
+    left: 10px; 
+    top: -193px;
+    border-radius: 15px;
+  }
+  .grid-item-aside2 > p {
+    position: relative;    
+    top: -200px;
+  }
+}
